@@ -1,23 +1,11 @@
 @echo off
-echo Running REALME 8i debloat script by Pritish
+echo Running REALME 5 pro debloat script by Pritish
 
 echo Uninstalling stk
 adb shell pm uninstall -k --user 0 com.android.stk
 
-echo Uninstalling video
-adb shell pm uninstall -k --user 0 com.coloros.video
-
 echo Uninstalling browser
 adb shell pm uninstall -k --user 0 com.heytap.browser
-
-echo Uninstalling google keep
-adb shell pm uninstall -k --user 0 com.google.android.keep
-
-echo Uninstalling youtube
-adb shell pm uninstall -k --user 0 com.google.android.youtube
-
-echo Uninstalling google news
-adb shell pm uninstall -k --user 0 com.google.android.apps.magazines
 
 echo Disabling heytap cloud
 adb shell pm disable-user --user 0 com.heytap.cloud
@@ -61,9 +49,6 @@ adb shell pm uninstall -k --user 0 com.heytap.pictorial
 echo Uninstalling my realme
 adb shell pm uninstall -k --user 0 com.heytap.usercenter
 
-echo Uninstalling sound recorder
-adb shell pm uninstall -k --user 0 com.coloros.soundrecorder
-
 echo Disabling themestore
 adb shell pm disable-user --user 0 com.heytap.themestore
 
@@ -75,15 +60,6 @@ adb shell pm uninstall -k --user 0 com.coloros.compass2
 
 echo Uninstalling oroaming
 adb shell pm uninstall -k --user 0 com.redteamobile.roaming
-
-echo Uninstalling filemanager
-adb shell pm uninstall -k --user 0 com.coloros.filemanager
-
-echo Disabling clock
-adb shell pm disable-user --user 0 com.coloros.alarmclock
-
-echo Uninstalling music
-adb shell pm uninstall -k --user 0 com.heytap.music
 
 echo Uninstalling google lens
 adb shell pm uninstall -k --user 0 com.google.ar.lens
